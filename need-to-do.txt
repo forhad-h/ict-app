@@ -1,0 +1,75 @@
+# fix directory related error
+*** fix database error
+# pagination
+# form validation
+# view single posts
+# Trace all user activity
+** dynamic logo content
+** add google map for wetland
+** loading border top
+** alert for success failed
+** profile menu image
+** implement failed connection to usersConnectionFailed, wetlandsConnectionFailed, postsConnectionFailed
+** fixed notice appearing in allPosts, allUsers etc
+** edit option from fornend
+** updated all data if changed
+** dynamic home page
+** Dahsboard customization
+** profile picture change in header after edited and reload the page
+* animating appearance
+#* make all dates as string
+* add some animation
+* delete previous image
+# logout after password changed
+#* backend form validation
+* loader in email checker
+change input placeholder text color
+
+Submit after press enter
+Fix loader and other error message alignment
+
+* console fix
+[Violation] 'click' handler took 680ms for delete confirmation
+
+[Violation] Added non-passive event listener to a scroll-blocking 'mousewheel' event. Consider marking event handler as 'passive' to make the page more responsive. See https://www.chromestatus.com/feature/5745543795965952 -> for select field
+
+[DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) <input type=​"password" id=​"password" placeholder=​"Password" class=​"form-control">​ -> edit page
+
+
+
+
+
+
+
+
+
+
+
+
+
+*** Maintain user capability
+    # superadmin can add/edit/delete/restore user/wetlands/blog
+    # admin can add/edit user/wetland, add/edit/delete/restore own blog
+    # author can add wetland, add/edit/delete/restore own blog
+    # observer can view users, wetlands etc
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+

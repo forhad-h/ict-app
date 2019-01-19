@@ -1,0 +1,142 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Mixins
+@import 'mixins';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+img {
+  max-width: 100%;
+}
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.pre_loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255,0.6);
+  width: 100%;
+  height: 100%;
+  @include display_flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_header {
+    .navbar {
+      @include boxShadow(0px 0px 10px rgba(100,100,100,0.4));
+      ul {
+        li {
+          &.active {
+            a {
+              @include boxShadow(-2px 3px 10px rgba(200, 200, 200, 0.5));
+            }
+          }
+          a {
+            @include boxShadow(0px 1px 5px rgba(200, 200, 200, 0.5));
+            &:hover {
+              @include boxShadow(-1px 2px 8px rgba(200, 200, 200, 0.7));
+            }
+            &.login_link {
+              @include boxShadow(none);
+              font-size: 14px;
+              padding-left: 0!important;
+              &:hover {
+                @include boxShadow(none);
+              }
+            }
+          }
+        }
+      }
+    }
+}
+.adminNavbar {
+  width: $admin_menu_width;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  border-left: 5px solid $secondary_color;
+  z-index: 999;
+  .admin_submenu {
+    color: rgba(255, 255, 255, 0.75);
+    background: $admin_menu_active_color;
+    border-radius: 0 0 20px 0;
+    font-size: 0.98em;
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+  .navbar {
+    align-items: flex-start;
+    flex-basis: 100vh;
+    .navbar-collapse {
+      align-items: flex-start;
+    }
+    .navbar-nav {
+      flex-direction: column;
+    }
+  }
+  .navbar-expand-lg {
+    flex-direction: column;
+  }
+  ul {
+    li {
+      display: block;
+      a {
+        padding-left: 10px!important;
+        border-top: 2px solid transparent;
+        border-right: 2px solid transparent;
+        &.clicked {
+          background: $secondary_color;
+        }
+        > span.collapseIcon {
+          font-size: 0.8em;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      &.active {
+        > a {
+          background: #24292e;
+          width: 105%;
+          border-radius: 0 50px 50px 0;
+          border-top: 2px solid $secondary_color;
+          border-right: 2px solid $secondary_color;
+        } 
+        .admin_submenu {
+          a {
+            &.router-link-exact-active {
+              color: rgba(255, 255, 255, 0.75);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#admin_main,
+.admin_header,
+.admin_footer {
+  padding-left: $admin_menu_width;
+}
+.filterOptions .form-control {
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+  line-height: 1.2;
+  height: 35px;
+}
+.page-item {
+  &.disabled {
+    .page-link {
+      background: #f0f0f0;
+    }
+  }
+}

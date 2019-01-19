@@ -1,0 +1,15 @@
+//box shadow
+
+@mixin boxShadow($value) {
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  -o-box-shadow: $value;
+  box-shadow: $value;
+}
+@mixin display_flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
